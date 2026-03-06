@@ -53,6 +53,7 @@ export function DashboardHeader({
             <time
               className="hidden sm:inline text-xs"
               dateTime={currentTime.toISOString()}
+              suppressHydrationWarning
             >
               {format(currentTime, "MMM dd, yyyy HH:mm")}
             </time>
